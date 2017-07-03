@@ -1,0 +1,116 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    // font-size: 100%;
+    // font: inherit;
+    // vertical-align: baseline;
+}
+
+$color_white1: #fff;
+$color_shadow1: #ddd;
+//$transforming: translate/translateX.../scale
+@mixin transform ($transforming) {
+    -webkit-transform: $transforming;
+    -moz-transform: $transforming;
+    -transform: $transforming;
+}
+
+//$shadow : 参数: X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow; //Safariand Google chrome10.0-  
+    -moz-box-shadow: $shadow; //Firefox4.0-
+    box-shadow: $shadow; //Firefox4.0+、 Google chrome 10.0+ 、 Oprea10.5+ and IE9  
+}
+
+@mixin transition($trans) {
+    -webkit-transition: $trans;
+    -moz-transition: $trans;
+    transition: $trans;
+}
+
+@mixin background-size($bgsize) {
+    -webkit-background-size: $bgsize;
+    -moz-transition: $bgsize;
+    background-size: $bgsize;
+}
